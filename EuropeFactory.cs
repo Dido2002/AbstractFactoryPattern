@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AudiAbstractFactory
+namespace ToyotaAbstractFactory
 {
-	class EuropeFactory:AudiFactory
-	{
-		public override Audi CreateModel()
-		{
-			return new A8Audi();
-		}
+     class EuropeFactory: ToyotaFactory // Concrete Factory 2
+        {
+        public override Toyota CreateModel() 
+        {
+            return new CorollaToyota();   //Concrete Product2
 
-	}
+        }
+    }
 }
